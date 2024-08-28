@@ -1,0 +1,36 @@
+.headtext{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bolder;
+    ;font-size: x-large;
+    color: rgb(21, 21, 21);
+
+}
+.headtext p{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+  font-style: normal;
+  font-size: 3rem;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.btn-danger{
+    padding: 2%;
+    border-radius: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+@media screen and (max-width:700px) {
+    .btn-danger{
+        padding: 10%;
+        border-radius: 100%;
+        font-size: x-large;
+    }
+}

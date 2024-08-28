@@ -1,0 +1,88 @@
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(220, 24%, 12%);
+    --black-color-light: hsl(220, 24%, 15%);
+    --black-color-lighten: hsl(220, 20%, 18%);
+    --white-color: #fff;
+    --body-color: hsl(220, 100%, 97%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: .938rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: var(--z-fixed);
+}
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgba(24, 28, 37, 1);
+    color: white;
+    height: 70px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.nav-icon {
+    cursor: pointer;
+    font-size: 25px; /* Increased the font-size for icons */
+}
+
+.nav__logo {
+    font-size: 20px; /* Increased the font-size for the logo icon */
+}
+
+.nav-title {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-icon.back {
+    order: 1;
+}
+
+.nav-title {
+    order: 2;
+}
+
+.nav-icon.reface {
+    order: 3;
+}
+
+.nav-title a{
+    text-decoration: none;
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
